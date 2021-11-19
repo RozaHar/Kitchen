@@ -1,0 +1,2 @@
+class Cuddy < ApplicationRecord
+end
