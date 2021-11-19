@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'cuddies#index'
+  resources :cuddies
   namespace :admin do
     resources :cuddies
   end
