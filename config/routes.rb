@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  devise_for :users
   root 'cuddies#index'
   resources :cuddies
   namespace :admin do
