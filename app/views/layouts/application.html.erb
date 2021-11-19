@@ -11,6 +11,11 @@
   </head>
 
   <body>
+    <% if controller_path =~ /^admin\// %>
+       <%= render "admin/shered/header" %>
+    <% else %>
+       <%= render "shered/header" %>
+    <% end %>
     <%= yield %>
   </body>
 </html>
